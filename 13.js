@@ -2,7 +2,7 @@ document.addEventListener("mousemove", (event) => {
 	const cube = document.querySelector(".cube");
 	const { innerWidth: width } = window;
 	const mouseX = event.clientX;
-	const maxAngle = 10; // Maximum rotation angle
+	const maxAngle = 20; // Maximum rotation angle
 	const rotationY = Math.max(
 		-maxAngle,
 		Math.min(maxAngle, ((mouseX / width) * 2 - 1) * maxAngle)
